@@ -1,78 +1,14 @@
-@import "./card/styles"
-
 test(color = red)
 	border: 1px solid color
 	box-sizing: border-box
+
+@import "./card/styles"
+@import "./layout/styles"
+@import "./status/styles"
+@import "./phases/styles"
+@import "./battle/styles"
 
 body
 	font-family Arial
 	font-size 16px
 	margin 0
-
-.Layout
-	background-image url('../images/city.jpg')
-	background-size cover
-	display flex
-	flex-direction column
-	justify-content space-between
-	padding .5em
-	test(brown)
-	margin .5em
-	min-height 100vh
-	> section
-		margin .5em
-	&-main
-		display flex
-		justify-content space-between
-	&-status
-		test(green)
-		width 200px
-	&-battle
-		background-image url('../images/pattern.jpg')
-		flex 1
-		margin 0 .5em
-		test(orange)
-	&-phases
-		position relative
-		test(purple)
-		width 200px
-	&-antagonist
-		display flex
-		justify-content space-between
-		test(aquamarine)
-	&-player
-		display flex
-		justify-content space-between
-		test(gray)
-
-.Status
-	background orange
-
-	&-player
-		background red
-		color white
-		margin 0
-		padding .5em
-	&-points
-		padding .5em
-		text-align center
-		margin 0
-
-.Phases
-	background white
-	border 5px dashed red
-	position absolute
-	right 0
-
-.Battle
-	padding .5em
-	&-antagonist
-		display flex
-		justify-content space-between
-		> div
-			margin 10px
-	&-player
-		display flex
-		justify-content space-between
-		> div
-			margin 10px
