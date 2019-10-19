@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "jade": "jade -o ./ -w -P ./lib/index.jade",
+        "styl": "stylus -w -c -o ./public/css/ ./lib/app.styl",
+        "serve": "http-server ./index"
+    }
+}
